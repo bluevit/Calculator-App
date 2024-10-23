@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="calc">
+      <div id="content">
+         <form>
+            <div id="output">
+               <input type="text" id='inputField'>
+            </div>
+            <div class="btn">
+               <input type="button" value='C' onclick="clrAll()" id="clear">
+               <input type="button" value='←' onclick="deleteChar()" id="backspace">
+               <input type="button" value='%' onclick="getValue('%')">
+               <input type="button" value='/' onclick="getValue('/')">
+               <br>
+               <input type="button" value='7' onclick="getValue('7')">
+               <input type="button" value='8' onclick="getValue('8')">
+               <input type="button" value='9' onclick="getValue('9')">
+               <input type="button" value='x' onclick="getValue('*')">
+               <br>
+               <input type="button" value='4' onclick="getValue('4')">
+               <input type="button" value='5' onclick="getValue('5')">
+               <input type="button" value='6' onclick="getValue('6')">
+               <input type="button" value='-' onclick="getValue('-')">
+               <br>
+               <input type="button" value='1' onclick="getValue('1')">
+               <input type="button" value='2' onclick="getValue('2')">
+               <input type="button" value='3' onclick="getValue('3')">
+               <input type="button" value='+' onclick="getValue('+')">
+               <br>
+               <input type="button" value='00' onclick="getValue('00')">
+               <input type="button" value='0' onclick="getValue('0')">
+               <input type="button" value='.' onclick="getValue('.')">
+               <input type="button" value='=' onclick="equal()">
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src='app.js'></script>
+</body>
+</html>
